@@ -1,0 +1,17 @@
+.intro {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.intro__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.intro__image {
+  width: 400px;
+  height: 500px;
+  border-radius: 20px;
+}
