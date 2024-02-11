@@ -9,6 +9,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow-clip-margin: none;
+  overflow: none;
 }
 .intro__image {
   width: 400px;

@@ -2,5 +2,24 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
+}
+
+.header__name {
+  color: white;
+  font-size: 32px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header__logo-section {
+  display: flex;
+  gap: 10px;
+}
+
+.header__logo {
+  width: 33px;
+  height: 32px;
 }

@@ -9,7 +9,7 @@ export const Intro = () => {
         <button></button>
         <button></button>
       </div>
-      <img className="intro__image" src={pic} />
+      <img className="intro__image" src={pic} alt="personal photo" />
     </section>
   );
 };
