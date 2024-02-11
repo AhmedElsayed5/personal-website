@@ -17,3 +17,16 @@
   height: 500px;
   border-radius: 20px;
 }
+.intro__button {
+  color: white;
+  border: none;
+  background-color: transparent;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: underline;
+}
+.intro__button-link {
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+}

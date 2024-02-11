@@ -1,0 +1,29 @@
+.contact-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.contact-form__content {
+  background-color: #ffffff;
+  width: 430px;
+  min-height: 380px;
+  border-radius: 20px;
+  padding: 34px 35px 0 35px;
+  position: relative;
+  font-family: "Cabinet Grotesk", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  box-sizing: border-box;
+}
+.contact-form__label {
+  display: flex;
+  flex-direction: column;
+}
