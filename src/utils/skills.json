@@ -1,0 +1,36 @@
+[
+  {
+    "name": "JavaScript"
+  },
+  {
+    "name": "TypeScript"
+  },
+  { "name": "React" },
+  { "name": "Next.JS" },
+  { "name": "Node.js" },
+  { "name": "NoSQL" },
+  { "name": "GraphQL" },
+  { "name": "Java" },
+  { "name": "Python" },
+  { "name": "C++" },
+  { "name": "DevOps" },
+  { "name": "PHP" },
+  { "name": "Laravel" },
+  { "name": "HTML/CSS" },
+  { "name": "Redux" },
+  { "name": "CSS Tailwind" },
+  { "name": "Unit testing" },
+  { "name": "Docker" },
+  { "name": "SQL" },
+  { "name": "NPM" },
+  { "name": "AWS" },
+  { "name": "GCD" },
+  { "name": "NoSQL" },
+  { "name": "CI/CD" },
+  { "name": "Docker" },
+  { "name": "Git" },
+  { "name": "GitHub" },
+  { "name": "Algorithms" },
+  { "name": "Data Structures" },
+  { "name": "MongoDB" }
+]

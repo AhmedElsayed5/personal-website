@@ -1,0 +1,17 @@
+.skills {
+  padding-top: 30px;
+}
+
+.skills__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.skills__item {
+  color: white;
+  text-decoration: none;
+}

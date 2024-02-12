@@ -1,0 +1,10 @@
+.projects-section {
+  padding-top: 30px;
+}
+.projects-section__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
