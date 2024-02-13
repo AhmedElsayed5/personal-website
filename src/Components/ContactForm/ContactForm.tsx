@@ -14,30 +14,7 @@ export interface Props {
 //   });
 // }
 
-// initializeEmailJS()
-//   .then((value) => {
-//     console.log("resolved", value);
-//   })
-//   .catch((error) => {
-//     console.log("rejected", error);
-//   });
-
 export const ContactForm: React.FC<Props> = (values) => {
-  // (function () {
-  //   // https://dashboard.emailjs.com/admin/account
-  //   emailjs.init({
-  //     publicKey: "JLNsv5Pd155nZ60eD",
-  //   });
-  // })();
-  // function initializeEmailJS(): Promise<void> {
-  //   return new Promise<void>((resolve, reject) => {
-  //     // https://dashboard.emailjs.com/admin/account
-  //     emailjs.init({
-  //       publicKey: "JLNsv5Pd155nZ60eD",
-  //     });
-  //   });
-  // }
-
   // initializeEmailJS()
   //   .then((value) => {
   //     console.log("resolved", value);
@@ -61,43 +38,36 @@ export const ContactForm: React.FC<Props> = (values) => {
   //       );
   //     });
   // };
-  function sendEmail(e: React.ChangeEvent<HTMLInputElement>): void {
+  function sendEmail(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    // console.log(e.target.name);
+    const form = e.currentTarget;
+
+    // Access the form elements
+    const formElements = form.elements;
+    console.log(formElements);
+
+    // Access a specific form element
+    const userInput = formElements.namedItem("user_name") as HTMLInputElement;
+
+    // Now you can use userInput.value
+    console.log(userInput.value);
+    // const form = e.currentTarget;
+    // const formElements = form.elements as typeof form.elements & {
+    //   userInput: HTMLInputElement;
+    // };
 
     emailjs
-      .sendForm(
-        "contact_service",
-        "contact_form",
-        e.currentTarget.value,
-        "JLNsv5Pd155nZ60eD"
-      )
+      .sendForm("contact_service", "contact_form", form, "JLNsv5Pd155nZ60eD")
       .then(
         (result) => {
           console.log(result.text);
         },
-        (error) => {
-          console.log(error.text);
+        (error: Error) => {
+          console.log(error.message);
         }
       );
   }
-  // const sendEmail = async (
-  //   e: React.FormEvent<HTMLFormElement>
-  // ): Promise<void> => {
-  //   e.preventDefault();
-
-  //   try {
-  //     const result = await emailjs.sendForm(
-  //       "YOUR_SERVICE_ID",
-  //       "YOUR_TEMPLATE_ID",
-  //       e.currentTarget,
-  //       "YOUR_USER_ID"
-  //     );
-
-  //     console.log(result.text);
-  //   } catch (error) {
-  //     console.log(error?.text);
-  //   }
-  // };
 
   return (
     <section className="contact-form">
