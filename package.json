@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@cyntler/react-doc-viewer": "^1.14.1",
+    "@emailjs/browser": "^4.1.0",
     "docx": "^8.5.0",
     "react": "^18.2.0",
     "react-doc-viewer": "^0.1.5",
