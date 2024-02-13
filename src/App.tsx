@@ -14,6 +14,10 @@ function App() {
     setActiveView("ContactForm");
   };
 
+  const closePopUp = () => {
+    setActiveView("");
+  };
+
   return (
     <>
       <Header />
@@ -21,7 +25,7 @@ function App() {
       <ProjectSection />
       <Skills />
       <Footer />
-      {activeView === "ContactForm" && <ContactForm />}
+      {activeView === "ContactForm" && <ContactForm close={closePopUp} />}
     </>
   );
 }
