@@ -80,9 +80,8 @@ export const ContactForm: React.FC<Props> = (values) => {
           alt={"Close Icon"}
         />
         <p className="contact-form__paragraph">
-          Feel free reaching out to me on linked, github or submit the form and
-          it will send an email to :ahmedelsayed11595@gmail.com also reaching
-          out by email directly is welcomed
+          Reach out to me on linked, github or by sending an email to
+          :ahmedelsayed11595@gmail.com. Or you can use the form below.
         </p>
         <form
           id="contact-form"
