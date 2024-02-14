@@ -26,6 +26,9 @@
   margin: 0px;
   text-decoration: underline;
 }
+.intro__button:hover {
+  cursor: pointer;
+}
 .intro__button-link {
   text-decoration: none;
   margin: 0px;

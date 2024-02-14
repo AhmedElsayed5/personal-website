@@ -67,6 +67,7 @@ export const ContactForm: React.FC<Props> = (values) => {
           console.log(error.message);
         }
       );
+    values.close();
   }
 
   return (
@@ -80,18 +81,43 @@ export const ContactForm: React.FC<Props> = (values) => {
         />
         <p className="contact-form__paragraph">
           Feel free reaching out to me on linked, github or submit the form and
-          it will send an email to :ahmedelsayed11595@gmail.com also reacing out
-          by email directly is welcomed
+          it will send an email to :ahmedelsayed11595@gmail.com also reaching
+          out by email directly is welcomed
         </p>
-        <form id="contact-form" onSubmit={sendEmail}>
+        <form
+          id="contact-form"
+          className="contact-form__form"
+          onSubmit={sendEmail}
+        >
           {/* <input type="hidden" name="contact_number" /> */}
-          <label>Name</label>
-          <input type="text" name="user_name" />
-          <label>Email</label>
-          <input type="email" name="user_email" />
-          <label>Message</label>
-          <textarea name="message"></textarea>
-          <input type="submit" value="Send" />
+          <label className="contact-form__label">
+            Name
+            <input
+              type="text"
+              className="contact-form__input"
+              name="user_name"
+              required
+            />
+          </label>
+          <label className="contact-form__label">
+            Email
+            <input
+              type="email"
+              className="contact-form__input"
+              name="user_email"
+              required
+            />
+          </label>
+          <label className="contact-form__label">
+            Message
+            <textarea name="message" required className="contact-form__input" />
+          </label>
+          <input
+            type="submit"
+            className="contact-form__submit-button"
+            value="Send"
+            required
+          />
         </form>
         {/* <form>
           <label className="contact-form__label">
