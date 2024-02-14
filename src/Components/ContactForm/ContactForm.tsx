@@ -118,26 +118,6 @@ export const ContactForm: React.FC<Props> = (values) => {
             required
           />
         </form>
-        {/* <form>
-          <label className="contact-form__label">
-            email
-            <input
-              type="email"
-              name="email"
-              minLength={1}
-              maxLength={60}
-            ></input>
-          </label>
-          <label className="contact-form__label">
-            name
-            <input type="text" name="name" minLength={1} maxLength={30}></input>
-          </label>
-          <label className="contact-form__label">
-            message
-            <textarea name="message" rows={4} cols={5}></textarea>
-          </label>
-          <button type="submit">Send</button>
-        </form> */}
       </div>
     </section>
   );
