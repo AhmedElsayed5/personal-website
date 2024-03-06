@@ -13,7 +13,7 @@ export const Intro: React.FC<Props> = (values) => {
         <h1>Fullstack Developer</h1>
         <a
           className="intro__button-link"
-          href="https://drive.google.com/file/d/1nQTCGmGxBWSG31J5YOxpCW4SxbKKMxRG/view?usp=sharing"
+          href="https://drive.google.com/file/d/1bS_ecBo98zVWG26qXXlkleaJ3Lz2lewB/view?usp=sharing"
           rel="noreferrer"
           target="_blank"
         >
