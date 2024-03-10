@@ -9,8 +9,7 @@ export interface Props {
 export const Project: React.FC<Props> = (info) => {
   return (
     <section className="project">
-      <p className="project__description">{info?.name}</p>
-      <p className="project__description">{info?.description}</p>
+      <p className="project__title">{info?.name}</p>
       {info?.url && (
         <a href={info?.url} rel="noreferrer" target="_blank">
           <p className="project__description">Link</p>{" "}
@@ -19,7 +18,8 @@ export const Project: React.FC<Props> = (info) => {
       <a href={info?.code} rel="noreferrer" target="_blank">
         <p className="project__description">Code</p>
       </a>
-      <p className="project__description">{info?.technology}</p>
+      <p className="project__description">{info?.description}</p>
+      <p className="project__description">Tech stack: {info?.technology}</p>
     </section>
   );
 };
