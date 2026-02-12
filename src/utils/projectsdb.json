@@ -1,17 +1,16 @@
 [
   {
-    "name": "News Explorer",
-    "description": "Platform allows you to find hotest news on your favortie topics",
-    "url": "https://www.newsapp.crabdance.com/",
-    "code": "https://github.com/AhmedElsayed5/news-explorer-frontend",
-    "technology": "Reactjs, Nodejs, Express, MongoDB, Google Cloud Servicess"
-  },
-  {
     "name": "Synthesis Workshop",
     "description": "Syntheis Workshop is a platform provides courses and educational content for Graduate Students ",
     "url": "http://synthesis-workshop.com.s3-website-us-east-1.amazonaws.com/",
     "code": "https://github.com/synthesis-workshop/frontend?tab=readme-ov-file",
     "technology": "Typescript, React, Node, GraphQL, MySQL, AWS, S3 Bucket"
+  },
+  {
+    "name": "News Explorer",
+    "description": "Platform allows you to find hotest news on your favortie topics",
+    "code": "https://github.com/AhmedElsayed5/news-explorer-frontend",
+    "technology": "Reactjs, Nodejs, Express, MongoDB, Google Cloud Servicess"
   },
   {
     "name": "Weather Match",
