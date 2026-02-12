@@ -5,7 +5,8 @@ export interface Props {
   contact: () => void;
 }
 
-export const Intro: React.FC<Props> = (values) => {
+// export const Intro: React.FC<Props> = (values) => {
+export const Intro: React.FC<Props> = () => {
   return (
     <section className="intro">
       <div className="intro__info">
@@ -17,11 +18,11 @@ export const Intro: React.FC<Props> = (values) => {
           rel="noreferrer"
           target="_blank"
         >
-          <button className="intro__button">Check my Resume</button>
+          {/* <button className="intro__button">Check my Resume</button> */}
         </a>
-        <button className="intro__button" onClick={values.contact}>
+        {/* <button className="intro__button" onClick={values.contact}>
           Contact Me
-        </button>
+        </button> */}
       </div>
       <img className="intro__image" src={pic} alt="personal photo" />
     </section>
