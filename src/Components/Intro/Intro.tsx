@@ -5,7 +5,7 @@ export interface Props {
   contact: () => void;
 }
 
-export const Intro: React.FC<Props> = (values) => {
+export const Intro: React.FC<Props> = () => {
   return (
     <section className="intro">
       <div className="intro__info">
